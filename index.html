@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Singh | Future Engineer</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+header{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(135deg,#2563eb,#06b6d4);
+}
+
+header h1{
+font-size:48px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:50px 20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,255,255,.2);
+}
+
+h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin:10px 0;
+}
+
+button{
+background:#06b6d4;
+border:none;
+padding:12px 25px;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#0891b2;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#111827;
+}html{
+scroll-behavior:smooth;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px #38bdf8;
+transition:0.4s;
+}
+/* Animated Stars Background */
+body{
+    margin:0;
+    overflow-x:hidden;
+    background:#020617;
+}
+
+.stars{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background:transparent;
+}
+
+.stars::before{
+    content:"";
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    box-shadow:
+    50px 100px white,
+    120px 250px white,
+    200px 80px white,
+    300px 300px white,
+    450px 120px white,
+    600px 220px white,
+    750px 80px white,
+    900px 280px white,
+    1100px 140px white,
+    1300px 350px white,
+    1500px 100px white,
+    1700px 300px white;
+    animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+    from{
+        opacity:.3;
+    }
+    to{
+        opacity:1;
+    }
+}
+</style>
+</head>
+
+<body>
+  
+  <div class="stars"></div>
+  
+  
+  
+
+<header>
+<h1>Karan Singh</h1>
+<p>Future Engineer | Harvard Aspirant | BGMI Player | Coding Learner</p>
+<button onclick="welcome()">Say Hello</button>
+<p id="msg"></p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>👨 About Me</h2>
+<p>
+Hello! I'm Karan Singh from India. I am currently studying in Class 10 and plan to choose PCM after completing Class 10. I enjoy learning programming, solving mathematics, and playing BGMI. My dream is to study at Harvard University and build a successful career in technology.
+</p>
+</div>
+
+<div class="card">
+<h2>🎯 My Goals</h2>
+<ul>
+<li>Score excellent marks in Class 10 and 12.</li>
+<li>Choose PCM after Class 10.</li>
+<li>Learn HTML, CSS, JavaScript, Python and C++.</li>
+<li>Build amazing websites and apps.</li>
+<li>Improve my English communication.</li>
+<li>Get admission to Harvard University.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>🎮 Hobbies</h2>
+<ul>
+<li>Playing BGMI</li>
+<li>Learning Coding</li>
+<li>Watching Educational Videos</li>
+<li>Problem Solving</li>
+<li>Exploring Technology</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>💻 Skills I'm Learning</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Python</li>
+<li>C++ (Future)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>🚀 My Dream</h2>
+<p>
+I want to become a skilled software engineer, create innovative technology, and earn admission to Harvard University through hard work, consistency, and continuous learning.
+</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Karan Singh | Made with ❤️
+</footer>
+
+<script>
+function welcome(){
+  
+document.getElementById("msg").innerHTML="Welcome to my portfolio website! 🚀";
+}
+const text = "Dreaming Big • Harvard • Coding • BGMI";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 80);
+  }
+}
+
+typeEffect();
+</script>
+
+</body>
+</html>
